@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --header-height: 3rem;
+
+    --body-font: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*==================== NAV ====================*/
+
+.nav {
+    display: flex;
+    height: var(--header-height);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.nav__icon, 
+.nav__close, 
+.nav__toggle {
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 3px 2px -2px gray;
+        transition: .3s;
+    }
+
+    .nav__close, 
+    .nav__toggle {
+        position: absolute;
+        right: 1.3rem;
+        top: .5rem;
+        cursor: pointer;
+        display: initial;
+    }
+
+    .nav__icon {
+        display: initial;
+    }
+
+    .show-menu{
+        top: var(--header-height)
+    }
+
+    .nav__list {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.hidden{
+    visibility: hidden;
+}
