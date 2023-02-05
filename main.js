@@ -73,4 +73,99 @@ btnLeft.addEventListener('click', function() {prev()})
 
 let temp = setInterval(() => {
     next()
-}, 5000);
+}, 10000);
+
+/*==================== SKILLS ====================*/
+const categories = [
+    {
+        name: 'Front-end',
+        skills: [
+            {
+                name: 'FLUTTER',
+                percent: 95,
+            },
+            {
+                name: 'HTML',
+                percent: 85,
+            },
+            {
+                name: 'JAVA',
+                percent: 65,
+            },
+        ],
+    },
+    {
+        name: 'Back-end',
+        skills: [
+            {
+                name: 'FLUTTER',
+                percent: 85,
+            },
+            {
+                name: 'JAVASCRIPT',
+                percent: 30,
+            },
+            {
+                name: 'JAVA',
+                percent: 65,
+            },
+            {
+                name: 'PYTHON',
+                percent: 60,
+            },
+        ],
+    },
+    {
+        name: 'Database',
+        skills: [
+            {
+                name: 'FIREBASE',
+                percent: 90,
+            },
+            {
+                name: 'SQL',
+                percent: 20,
+            },
+            
+        ]
+    }
+]
+function createCategory(category) {
+    return `
+<div class="skill__list" id="skill__${category.name}">
+    <h2 class="skills__title">${category.name}</h2>
+</div>
+`
+}
+
+function createSkill(category, skill) {
+    return `
+<div class="skills__data">
+    <div class="skills__name">
+        <span class="skills__name">${skill.name}</span>
+    </div>
+    <div class="skills__bar" id="id__skills__${category.name}__${skill.name}"></div>
+    <div>
+        <span class="skills__percentage">${skill.percent}%</span>
+    </div>
+</div>
+`
+}
+
+for (let index = 0; index < categories.length; index++) {
+    const category = categories[index];
+
+    /*====== ADD CATEGORY ======*/
+    document.getElementById("skills-container").innerHTML += createCategory(category);
+
+    for (let index = 0; index < category.skills.length; index++) {
+        const skill = category.skills[index];
+        
+        /*====== ADD SKILL ======*/
+        document.getElementById(`skill__${category.name}`).innerHTML += createSkill(category, skill);
+
+        /*====== ADD BAR STYLE ======*/
+        document.getElementById(`id__skills__${category.name}__${skill.name}`).style.width = `${skill.percent}%`
+    }
+}
+
