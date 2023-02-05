@@ -45,6 +45,8 @@ a {
 
 .section__title{
     text-align: center;
+    color: black;
+    font-size: 35px;
     margin-bottom: 2rem;
 }
 
