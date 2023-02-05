@@ -143,6 +143,13 @@ a {
     width: 100%;
     height: 100%;
 }
+.slider__title{
+    transform: translateY(-200%);
+    color: white;
+    font-size: 4rem;
+    text-align: end;
+    margin-right: 30px;
+}
 
 .controls{
     display: flex;
