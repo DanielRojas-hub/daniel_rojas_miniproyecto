@@ -40,6 +40,7 @@ a {
 .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .section__title{
@@ -68,6 +69,8 @@ a {
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .nav__list{
@@ -213,4 +216,58 @@ a {
     width: 300px;
     height: 300px;
     border-radius: 500%;
+}
+
+/*==================== CONTACT ME ====================*/
+.contact__container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 800px) {
+    .contact__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.personal__information{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.external__icon{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.social__media__icon{
+    font-size: 2rem;
+    margin: 0 1.5rem;
+}
+.contact_item{
+    margin-bottom: 1.5rem;
+}
+.contact__form{
+    text-align: center;
+}
+.contact__content{
+    text-align: start;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+.contact__inputs{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.contact__input{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: start;
+    align-self: center;
 }
