@@ -147,9 +147,3 @@ a {
 .control:hover{
     background: lightgray;
 }
-.sliver__btn__left{
-    left: 10px;
-}
-.sliver__btn__right{
-    right: 10px;
-}
