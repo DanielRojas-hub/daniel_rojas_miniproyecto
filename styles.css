@@ -199,3 +199,18 @@ a {
 .experience__item{
     width: 100%;
 }
+
+/*==================== ABOUT ME ====================*/
+.about__me__container{
+    text-align: center;
+}
+.about__me__data{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about__me__image{
+    width: 300px;
+    height: 300px;
+    border-radius: 500%;
+}
