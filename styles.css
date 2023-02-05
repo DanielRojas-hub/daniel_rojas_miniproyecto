@@ -64,7 +64,12 @@ a {
 }
 
 /*==================== NAV ====================*/
-
+.nav__logo{
+    color: black;
+}
+.nav__link{
+    color: black;
+}
 .nav {
     display: flex;
     height: var(--header-height);
