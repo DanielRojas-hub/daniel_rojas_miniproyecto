@@ -189,12 +189,12 @@ a {
     gap: 1.5rem;
     grid-template-columns: repeat(1, 1fr);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
     .experience__container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (min-width: 1085px) {
+@media screen and (min-width: 1175px) {
     .experience__container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -206,12 +206,9 @@ a {
     padding: 0 1.5rem;
     text-align: center; 
 }
-.img__container{
-    height: 250px;
-}
 .experience__image {
     width: 100%;
-    height: 250px;
+    height: 300px;
     border-radius: .5rem;
     object-fit: cover;
 }
