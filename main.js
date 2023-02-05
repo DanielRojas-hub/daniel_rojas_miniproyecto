@@ -169,3 +169,34 @@ for (let index = 0; index < categories.length; index++) {
     }
 }
 
+/*==================== CONTACT ME ====================*/
+const notEmptyRegex = /(.|\s)*\S(.|\s)*/
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const contactButton = document.getElementById('contact-button');
+
+if(contactButton) {
+    contactButton.addEventListener('click', () => {
+        let nameInput = document.getElementById('name-input').value;
+        let emailInput = document.getElementById('email-input').value;
+        let messageInput = document.getElementById('message-input').value;
+        if(validateEmpty(nameInput) && validateEmail(emailInput) && validateEmpty(messageInput)) {
+            alert(`${nameInput} your request has been sent!`)
+        }
+    })
+}
+
+function validateEmail(mail) {
+    if (emailRegex.test(mail)) {
+        return true;
+    }
+    alert("You have entered an invalid email address!");
+    return false;
+}
+
+function validateEmpty(value) {
+    if(notEmptyRegex.test(value)) {
+        return true;
+    }
+    alert("You have entered an invalid input!");
+    return false;
+}

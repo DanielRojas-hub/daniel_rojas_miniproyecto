@@ -248,7 +248,7 @@
                         </div>
                         <div class="phone__number contact_item">
                             <h3 class="personal__information__title">Phone Number</h3>
-                            <a href="https://web.whatsapp.com/" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=584241727781" target="_blank">
                                 <label for="" class="contact__label">+58 424-1727781</label><i class="uil uil-external-link-alt external__icon"></i>
                             </a>
                         </div>
@@ -264,18 +264,18 @@
                         <div class="contact__inputs">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" class="contact__input" id="name-input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="text" class="contact__input">
+                                <label for="" class="contact__label" type="text">Email</label>
+                                <input type="text" class="contact__input" id="email-input">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
-                                <textarea name="" id="" cols="0" rows="4" class="contact__input"></textarea>
+                                <textarea name="" id="message-input" cols="0" rows="4" class="contact__input"></textarea>
                             </div>
                         </div>
-                        <div class="button">Send Message</div>
+                        <div class="button" id="contact-button">Send Message</div>
                     </form>
                 </div>
             </section>
