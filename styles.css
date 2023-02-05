@@ -45,7 +45,7 @@ a {
 
 .section__title{
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .button {
@@ -166,6 +166,10 @@ a {
 }
 
 /*==================== EXPERIENCE ====================*/
+.experience{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
 .experience__container{
     display: grid;
     gap: 1.5rem;
@@ -194,6 +198,10 @@ a {
     text-align: start;
     padding: 10px;
     list-style: circle;
+}
+.experience__technology__list__title{
+    font-weight: 600;
+    text-decoration: underline;
 }
 .experience__list{
     gap: 1.5rem;
